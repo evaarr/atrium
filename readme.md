@@ -1,14 +1,24 @@
-# Ejercicios del curso de HTML y CSS en Atrium #
+# Curso HTML y CSS #
 
 ## Inicialización ##
 
 - Instalación de VSC
-- Instalación de Node
+- Instalacion de Node
 - Instalación de git
 
 - Crear repositorio git
-
-``` shell
+```shell
 git init
-
 ```
+
+## HTML: Sectioning ##
+
+<body>
+<header>
+<h1>...
+<section>
+<article>
+<aside>
+<footer>
+
+##
