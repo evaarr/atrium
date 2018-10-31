@@ -1,3 +1,46 @@
 iframe.full {
     width: 100%;
 }
+
+h1, h2 {
+    color: brown;
+}
+
+/* 0 1 0 0*/
+#p1 { 
+    color: purple;
+}
+
+/* 0 0 1 1*/
+p.ultimo {
+    color: darkgoldenrod
+}
+
+p.ultimo {
+    color: coral;
+}
+
+/* 0 0 1 0*/
+.ultimo {
+    color: chartreuse;
+}
+
+/* 0 0 1 0*/
+[title^="de "] {
+    font-size: 5rem;
+}
+
+/* 0 0 0 1*/
+p {
+    color: blue;
+    font-size: 1.4rem;
+}
+
+
+h1 {
+    font-family: 'Spicy Rice', 'Otra fuente', cursive;
+    font-size: 3rem;
+}
+.boton {
+    cursor: pointer;
+}
