@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+<body>
+
+    b4-
+    <!-- <div class="col-xs|sm|md|lg|xl-1-12"> -->
+    <div class="container">
+        <div class="row">
+            <header class="col-sm-8 col-md-6">
+                <h1>Usando bootstrap</h1>
+            </header>
+            <div class="logo col-sm-4 col-md-6">
+                <p>Añadir logo</p>
+            </div>
+        </div>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-pills" id="navId">
+            <li class="nav-item">
+                <a href="#tab1Id" class="nav-link active">Active</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#tab2Id">Action</a>
+                    <a class="dropdown-item" href="#tab3Id">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#tab4Id">Action</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#tab5Id" class="nav-link">Another link</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link disabled">Disabled</a>
+            </li>
+        </ul>
+        
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+        </div>
+        
+        <script>
+            $('#navId a').click(e => {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+        </script>
+
+
+        <main class="row">
+            <section class="col-12 col-md-6 col-lg-7 col-xl-8">
+                <h2>Section</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eum neque beatae magni saepe, quae, aliquid sed explicabo placeat sapiente accusantium voluptates sunt facere at vero sit nam animi eos.</p>
+                <p>Quasi at provident neque itaque aspernatur eveniet cumque ratione natus quae, hic quam molestiae non sint dignissimos beatae atque nisi earum ipsum doloremque numquam! Nemo similique quam veniam suscipit modi?</p>
+                
+                <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../images/imagen_share.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                          <div class="card-header">
+                              Header
+                          </div>
+                          <div class="card-body">
+                              <h4 class="card-title">Title</h4>
+                              <p class="card-text">Text</p>
+                          </div>
+                          <div class="card-footer text-muted">
+                              Footer
+                          </div>
+                      </div>
+
+            </section>
+            <aside class="col-12 col-md-6 col-lg-5 col-xl-4">
+                <h2>Aside</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, voluptas necessitatibus rem ducimus culpa voluptate, quia quae enim consectetur voluptatum nulla et est vitae repudiandae earum, perferendis repellat ipsam dolore.</p>
+                <form action="">
+
+                    <div class="form-group">
+                      <label for=""></label>
+                      <input type="text"
+                        class="form-control" name="" id="" aria-describedby="helpId" placeholder="Nombre">
+                      <small id="helpId" class="form-text text-muted">Help text</small>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
+                       Estoy deacuerdo
+                      </label>
+                    </div>
+                </form>
+
+                <button type="button" class="btn btn-danger">Enviar</button>
+            </aside>
+        </main>
+
+        <div class="row">
+            <footer class="col-12">
+                <address>ATRIUM</address>
+            </footer>
+        </div>        
+    </div>
+
+</body>
+</html>
