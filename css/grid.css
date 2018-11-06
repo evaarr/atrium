@@ -1,0 +1,29 @@
+p, blockquote {
+    background-color: coral;
+    padding: 1rem;
+    margin: .5rem;
+   
+}
+
+.container {
+    display: grid;
+ 
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-auto-rows: 1.5fr;
+ }
+ 
+
+ p:nth-child(1) {
+     /*esto es lo mismo que poner
+    grid-column-start: 2;
+    grid-column-end: 4;
+     */
+    grid-column: 2/4;
+    grid-row: 1/3; 
+}
+
+p:nth-child(2) {
+    grid-row: 3/4; 
+    grid-column: 1/3;
+}
